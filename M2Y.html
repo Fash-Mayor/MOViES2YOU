@@ -12,12 +12,15 @@
 
   <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/album/">
 
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Poetsen+One&display=swap" rel="stylesheet">
 
-
-  <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
   <style>
     *{
@@ -37,6 +40,15 @@
       user-select: none;
     }
 
+    /* section{
+      margin-top: 30px;
+    } */
+
+    .full-name{
+      font-family: "poetsen one", sans-serif;
+      margin: 30px 0 0 0;
+    }
+
     @media (min-width: 768px) {
       .bd-placeholder-img-lg {
         font-size: 3.5rem;
@@ -44,7 +56,6 @@
 
     a{
       text-decoration: none;
-      color: black;
     }
     }
   </style>
@@ -60,9 +71,12 @@
         <div class="row">
           <div class="col-sm-8 col-md-7 py-4">
             <h4 class="text-white">About</h4>
-            <p class="text-muted">Add some information about the album below, the author, or any other background
+            <p class="text-muted">MOViES 2 YOU is a site that collects high quality movies and tv series
+              that you can download with just ONE CLICK.<br>
+              You can give your review about the site, also request movies or tv series from us and expect a response within 24 hours.
+              <!--Add some information about the album below, the author, or any other background
               context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off
-              to some social networking sites or contact information.</p>
+              to some social networking sites or contact information.--></p>
           </div>
           <div class="col-sm-4 offset-md-1 py-4">
             <h4 class="text-white">Contact</h4>
@@ -97,13 +111,30 @@
 
   <main>
 
+    <!--main body-->
     <section class="py-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="font-weight-light">MOViES To YOU</h1>
-          <p class="lead text-muted">This is a Student's project made with Bootstrap CSS. You can download the movies
-            and also give your remarks on how efficient the website is.<i> It'll really help me🙏.</i>
+          <h1 class="font-weight-light full-name">MOViES To YOU</h1>
+          <p class="lead text-muted">#Get Peak Stuff 👌
+            <!--This is a Student's project made with Bootstrap CSS. You can download the movies
+            and also give your remarks on how efficient the website is.<i> It'll really help me🙏.--></i>
           </p>
+
+          <!--Search bar-->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <form>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                    <button class="btn btn-primary" type="submit" id="button-addon2">Go</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
           <p>
             <a href="#" class="btn btn-primary my-2">Let's Hear Your Review</a>
             <a href="#" class="btn btn-secondary my-2">Request a Movie</a>
@@ -122,8 +153,8 @@
             <div class="card shadow-sm">
               <img src="img/damsel.jpg" height="225px" x="100%" y="100%">
               <div class="card-body">
-                <p class="card-text"><strong>Damsel</strong> (2024)<br>A young woman's marriage to a charming prince turns into a fierce fight for survival 
-                  when she's offered up as a sacrifice to a fire-breathing dragon.</p>
+                <p class="card-text"><strong>Damsel</strong> (2024)<br>A young woman agrees to marry a handsome prince, only to discover it was all a trap. 
+                  She is thrown into a cave with a fire-breathing dragon and must rely solely on her wits and will to survive.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="https://drive.usercontent.google.com/download?id=1qzuIMhneYZ8XfHIx_USzA-yrzmTt3cJD&export=download&authuser=0&confirm=t&uuid=6c397276-dd50-40cc-afa6-3bcc08e7cbed&at=APZUnTWVGAbjf1nPJHwdnkKf_tt_:1715709642093" target="_blank">
@@ -160,7 +191,7 @@
             <div class="card shadow-sm">
               <img src="img/madame-web.jpg" height="225px" x="100%" y="100%">
               <div class="card-body">
-                <p class="card-text"><strong>Madame Webb</strong><br>Forced to challenge revelations about her past, Cassandra Webb needs to safeguard three young women 
+                <p class="card-text"><strong>Madame Webb</strong> (2024)<br>Forced to challenge revelations about her past, Cassandra Webb needs to safeguard three young women 
                   from a deadly adversary who wants them destroyed.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -178,8 +209,8 @@
             <div class="card shadow-sm">
               <img src="img/little-women.jpg" height="225px" x="100%" y="100%">
               <div class="card-body">
-                <p class="card-text"><strong>Little Women</strong><br>Jo March reflects back and forth on her life, telling the beloved story of the March sisters - four young women, 
-                  each determined to live life on her own terms</p>
+                <p class="card-text"><strong>Little Women</strong> (2019)<br>The story follows the lives of the four March sisters—Meg, Jo, Beth, and Amy—and details their passage from 
+                  childhood to womanhood with each determined to live life on her own terms.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Download</button>
@@ -399,9 +430,8 @@
       <p class="float-right mb-1">
         <a href="#">Back to top</a>
       </p>
-      <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-      <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-          href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p>
+      <p class="mb-1">M2Y &copy; 2024. Created by Fash-Mayor</p>
+      <p class="mb-0">Want to Contribute? <a href="/">Visit our GitHub</a></p>
     </div>
   </footer>
 
