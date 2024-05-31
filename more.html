@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, Bootstrap contributors and Fasugba Mayowa">
+  <meta name="generator" content="Hugo 0.72.0">
+  <title>MOViES 2 YOU Official ~ More</title>
+  
+  <link rel="icon" type="image/svg+xml" href="img/film-roll.svg">
+
+  <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/album/">
+
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Poetsen+One&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</head>
+<style>
+  *{
+    scroll-behavior: smooth;
+  }
+  img{
+    object-fit: cover;
+  }
+  a{
+    text-decoration: none;
+  }
+  #downholl{
+    font-size: 12px;
+  }
+  #youtubevid{
+    margin-top: 120px;
+  }
+  #downsize{
+    background-color: rgb(198, 221, 255);
+  }
+  #downsize p{
+    font-size: 14px;
+  }
+  #buttons button{
+    display: block;
+    margin-bottom: 15px;
+    padding: 20 40px;
+  }
+  /* #recommend a img{
+    margin-left: 100px;
+  } */
+  #photo{
+    font-size: 1.9em;
+  }
+  
+</style>
+<body>
+  
+  <!-- navbar  -->
+  
+  <header class="fixed-top">
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">MOViES 2 YOU is a site that collects high quality movies and tv series
+              that you can download with just ONE CLICK.<br>
+              You can give your review about the site, also request movies or tv series from us and expect a response within 24 hours.
+            </p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Follow on Twitter</a></li>
+              <li><a href="#" class="text-white">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+
+          <!--logo and website name-->
+          <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+           width="20" height="20" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+           <g id="SVGRepo_iconCarrier"> <style type="text/css">  .st0{fill:#ffffff;}  </style> <g> 
+            <path class="st0" d="M343.656,451.109C410,411.438,454.422,338.906,454.422,256c0-125.484-101.719-227.219-227.203-227.219 C101.719,28.781,0,130.516,0,256s101.719,227.219,227.219,227.219H512v-32.109H343.656z M318.484,145.875 c23.547-13.594,53.641-5.531,67.234,18.016s5.531,53.656-18.016,67.25c-23.547,13.578-53.641,5.516-67.234-18.016 C286.859,189.563,294.938,159.469,318.484,145.875z M300.453,297.688c13.609-23.547,43.703-31.609,67.25-18.016 c23.547,13.609,31.609,43.703,18.016,67.25s-43.688,31.609-67.25,18.016C294.938,351.344,286.859,321.234,300.453,297.688z M227.219,72.375c27.188,0,49.219,22.031,49.219,49.219s-22.031,49.25-49.219,49.25s-49.25-22.063-49.25-49.25 S200.031,72.375,227.219,72.375z M249.938,256c0,12.563-10.172,22.719-22.719,22.719c-12.563,0-22.719-10.156-22.719-22.719 s10.156-22.719,22.719-22.719C239.766,233.281,249.938,243.438,249.938,256z M68.703,163.891 c13.594-23.547,43.703-31.609,67.25-18.016s31.609,43.688,18.016,67.25c-13.594,23.531-43.703,31.609-67.25,18.016 C63.188,217.547,55.109,187.438,68.703,163.891z M135.969,364.938c-23.563,13.594-53.656,5.531-67.266-18.016 c-13.578-23.547-5.516-53.656,18.016-67.266c23.547-13.594,53.656-5.516,67.25,18.031S159.5,351.344,135.969,364.938z M177.969,389.203c0-27.188,22.063-49.234,49.25-49.234s49.219,22.047,49.219,49.234s-22.031,49.234-49.219,49.234 S177.969,416.391,177.969,389.203z"></path> </g> </g>
+          </svg>
+          <strong>M2Y</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="" id="youtubevid">
+    <div class="container-lg">
+      <div class="row justify-content-around align-items-start">
+        
+        <div class="col-8">
+          <p class="my-3" id="downholl">Download HollyWood movie Damsel free now</p>
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iM150ZWovZM?si=77OmKxS6QL7YkL6x" allowfullscreen=""></iframe>
+          </div>
+          <div class="my-5">
+            <h4><strong>Damsel</strong></h4>
+            <p>A dutiful damsel agrees to marry a handsome prince, only to find the royal family 
+              has recruited her as a sacrifice to repay an ancient debt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro possimus facilis quaerat dicta libero, cupiditate illum nostrum excepturi sequi, tempore consequatur alias rerum modi consequuntur nemo et praesentium officiis laboriosam.</p>
+          </div>
+          <div class="p-3 font-weight-bold" id="downsize">
+            <h5>Download Size</h5>
+            <p>This Video is 1.7 GB</p>
+          </div>
+
+          <h5 class="my-3 text-center font-weight-bold">Download links for Damsel (Hollywood Movie)</h5>
+
+          <div class="my-5" id="buttons">
+            <button href="#" class="btn btn-info">Download Movie</button>
+            <button href="#" class="btn btn-info">Can't Download?</button>
+            <button href="#" class="btn btn-info">How to Download</button>
+          </div>
+
+          <p class="font-weight-bold" id="photo">Photos</p>
+          <div class="row g-3">
+            <div class="col-md-3 col-6">
+              <img src="/img/avatar.jpg" class="img-fluid" style=" width: 200px; height: 200px;">
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="/img/avatar.jpg" class="img-fluid" style=" width: 200px; height: 200px;">
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="/img/avatar.jpg" class="img-fluid" style=" width: 200px; height: 200px;">
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="/img/avatar.jpg" class="img-fluid" style=" width: 200px; height: 200px;">
+            </div>
+          </div>
+
+          <p class="font-weight-bold mt-5" id="photo">Top cast</p>
+
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-3">
+                  <img src="/img/avatar.jpg" class="rounded-circle img-fluid" style="width: 100%; height: 50%;">
+                </div>
+                <div class="col-md-6 col-6">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Millie Bobby Brown</h5>
+                    <p class="card-text">Elodie</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-3">
+                  <img src="/img/avatar.jpg" class="img-fluid rounded-circle" style="width: 100%; height: 50%;">
+                </div>
+                <div class="col-md-6 col-6">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Ray Winstone</h5>
+                    <p class="card-text">Lord Bayford</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-3">
+                  <img src="/img/avatar.jpg" class="img-fluid rounded-circle" style="width: 100%; height: 50%;">
+                </div>
+                <div class="col-md-6 col-6">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Nicole Joseph</h5>
+                    <p class="card-text">Princess Victoria</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-3">
+                  <img src="/img/avatar.jpg" class="img-fluid rounded-circle" style="width: 100%; height: 50%;">
+                </div>
+                <div class="col-md-6 col-6">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Nick Robinson</h5>
+                    <p class="card-text">Prince Henry</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-3">
+                  <img src="/img/avatar.jpg" class="img-fluid rounded-circle" style="width: 100%; height: 50%;">
+                </div>
+                <div class="col-md-6 col-6">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Nick Robinson</h5>
+                    <p class="card-text">Prince Henry</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-3">
+                  <img src="/img/avatar.jpg" class="img-fluid rounded-circle" style="width: 100%; height: 50%;">
+                </div>
+                <div class="col-md-6 col-6">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Nick Robinson</h5>
+                    <p class="card-text">Prince Henry</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-3">
+                  <img src="/img/avatar.jpg" class="img-fluid rounded-circle" style="width: 100%; height: 50%;">
+                </div>
+                <div class="col-md-6 col-6">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Nick Robinson</h5>
+                    <p class="card-text">Prince Henry</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-3">
+                  <img src="/img/avatar.jpg" class="img-fluid rounded-circle" style="width: 100%; height: 50%;">
+                </div>
+                <div class="col-md-6 col-6">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Nick Robinson</h5>
+                    <p class="card-text">Prince Henry</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-3">
+                  <img src="/img/avatar.jpg" class="img-fluid rounded-circle" style="width: 100%; height: 50%;">
+                </div>
+                <div class="col-md-6 col-6">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Nick Robinson</h5>
+                    <p class="card-text">Prince Henry</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-3">
+                  <img src="/img/avatar.jpg" class="img-fluid rounded-circle" style="width: 100%; height: 50%;">
+                </div>
+                <div class="col-md-6 col-6">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Nick Robinson</h5>
+                    <p class="card-text">Prince Henry</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-3">
+                  <img src="/img/avatar.jpg" class="img-fluid rounded-circle" style="width: 100%; height: 50%;">
+                </div>
+                <div class="col-md-6 col-6">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Nick Robinson</h5>
+                    <p class="card-text">Prince Henry</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-3">
+                  <img src="/img/avatar.jpg" class="img-fluid rounded-circle" style="width: 100%; height: 50%;">
+                </div>
+                <div class="col-md-6 col-6">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Nick Robinson</h5>
+                    <p class="card-text">Prince Henry</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-3">
+                  <img src="/img/avatar.jpg" class="img-fluid rounded-circle" style="width: 100%; height: 50%;">
+                </div>
+                <div class="col-md-6 col-6">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Nick Robinson</h5>
+                    <p class="card-text">Prince Henry</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 border-0" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-3">
+                  <img src="/img/avatar.jpg" class="img-fluid" style="width: 100px; height: 100px; border-radius: 50%;">
+                </div>
+                <div class="col-md-6 col-6">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Nick Robinson</h5>
+                    <p class="card-text">Prince Henry</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div>
+
+
+
+
+
+
+
+
+          <div id="recommend" class="justify-content-center">
+            <h5 class="mt-5 text-center font-weight-bold">Recommended before watching Damsel (HollyWood Movie)</h5>
+            <a href="#"><img src="/img/dune.jpg" class="img-fluid mt-4 text-center" style="width: 600; height: 900;"></a>
+          </div>
+
+          <p class="mt-5 font-weight-bold">YOU MIGHT ALSO LIKE</p>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-3">
+              <img src="/img/argylle.jpg" class="img-fluid">
+              <p><strong>Argylle</strong> (2024) </p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-7 col-lg-3 col-xl-3 d-none d-lg-block shadow p-4" id="disclaimer">
+          <input type="text" placeholder="Search for movies here" class="form-control my-4">
+          <p>Disclaimer</p>
+          <small>MOViES 2 YOU does not claim ownership of any movie on this site. If your copyrighted material has been uploaded or links to your copyrighted material has been uploaded kindly click here to file a take down notice</small>
+
+          <p class="pt-5">How to support us</p>
+          <small>You can support us by donating cryptocurrency to us to help maintain the website. Nothing is too small. Form more information CLICK HERE</small>
+          <input type="text" placeholder="Searchhere" class="form-control my-4">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+</body>
+</html>
+
+
+
+
+
+
