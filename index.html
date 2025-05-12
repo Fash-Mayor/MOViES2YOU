@@ -1,864 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta
-      name="keyword"
-      content="latest movies, movies, hollywood, movies website"
-    />
-    <title>MOViES 2 YOU Official ~ Easy Download</title>
-    <link rel="icon" type="image/svg+xml" href="img/film-roll.svg" />
 
-    <link
-      rel="canonical"
-      href="https://v5.getbootstrap.com/docs/5.0/examples/album/"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="keyword" content="latest movies, movies, hollywood, movies website" />
+  <title>MOViES 2 YOU Official ~ Easy Download</title>
+  <link rel="icon" type="image/svg+xml" href="img/film-roll.svg" />
 
-    <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Freeman&family=Poetsen+One&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/album/" />
 
-    <!-- Bootstrap core CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Poetsen+One&display=swap" rel="stylesheet" />
 
-    <style>
-      * {
-        scroll-behavior: smooth;
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+
+    img {
+      object-fit: cover;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .full-name {
+      font-family: "poetsen one", sans-serif;
+      margin-top: 30px;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
 
-      img {
-        object-fit: cover;
-      }
+    a {
+      text-decoration: none;
+    }
 
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+    /*blur*/
+    .blur:has(img:hover) img:not(:hover) {
+      filter: blur(3px);
+    }
+  </style>
+</head>
 
-      .full-name {
-        font-family: "poetsen one", sans-serif;
-        margin-top: 30px;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      /*blur*/
-      .blur:has(img:hover) img:not(:hover) {
-        filter: blur(3px);
-      }
-    </style>
-  </head>
-
-  <body>
-    <header class="fixed-top">
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">
-                MOViES 2 YOU is a site that collects high quality movies and tv
-                series that you can download with just ONE CLICK.<br />
-                You can give your review about the site, also request movies or
-                tv series and expect a response within 24 hours.
-              </p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li>
-                  <a
-                    href="https://x.com/_FashMayor"
-                    class="text-white"
-                    target="_blank"
-                    >Follow on Twitter</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/fasugba-mayowa-737b14327?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bm2qFjjGxQeSv7aCqnmyEtQ%3D%3D" class="text-white" target="_blank"
-                    >Follow on LinkedIn</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="mailto:mayowasamson03@gmail.com"
-                    class="text-white"
-                    target="_blank"
-                    >Email me</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container">
-          <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <!--logo and website name-->
-            <svg
-              version="1.1"
-              id="_x32_"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="20"
-              height="20"
-              viewBox="0 0 512 512"
-              xml:space="preserve"
-              fill="#000000"
-            >
-              <g id="SVGRepo_iconCarrier">
-                <style type="text/css">
-                  .st0 {
-                    fill: #ffffff;
-                  }
-                </style>
-                <g>
-                  <path
-                    class="st0"
-                    d="M343.656,451.109C410,411.438,454.422,338.906,454.422,256c0-125.484-101.719-227.219-227.203-227.219 C101.719,28.781,0,130.516,0,256s101.719,227.219,227.219,227.219H512v-32.109H343.656z M318.484,145.875 c23.547-13.594,53.641-5.531,67.234,18.016s5.531,53.656-18.016,67.25c-23.547,13.578-53.641,5.516-67.234-18.016 C286.859,189.563,294.938,159.469,318.484,145.875z M300.453,297.688c13.609-23.547,43.703-31.609,67.25-18.016 c23.547,13.609,31.609,43.703,18.016,67.25s-43.688,31.609-67.25,18.016C294.938,351.344,286.859,321.234,300.453,297.688z M227.219,72.375c27.188,0,49.219,22.031,49.219,49.219s-22.031,49.25-49.219,49.25s-49.25-22.063-49.25-49.25 S200.031,72.375,227.219,72.375z M249.938,256c0,12.563-10.172,22.719-22.719,22.719c-12.563,0-22.719-10.156-22.719-22.719 s10.156-22.719,22.719-22.719C239.766,233.281,249.938,243.438,249.938,256z M68.703,163.891 c13.594-23.547,43.703-31.609,67.25-18.016s31.609,43.688,18.016,67.25c-13.594,23.531-43.703,31.609-67.25,18.016 C63.188,217.547,55.109,187.438,68.703,163.891z M135.969,364.938c-23.563,13.594-53.656,5.531-67.266-18.016 c-13.578-23.547-5.516-53.656,18.016-67.266c23.547-13.594,53.656-5.516,67.25,18.031S159.5,351.344,135.969,364.938z M177.969,389.203c0-27.188,22.063-49.234,49.25-49.234s49.219,22.047,49.219,49.234s-22.031,49.234-49.219,49.234 S177.969,416.391,177.969,389.203z"
-                  ></path>
-                </g>
-              </g>
-            </svg>
-            <strong>M2Y</strong>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarHeader"
-            aria-controls="navbarHeader"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <!--main body-->
-      <section class="py-5 text-center container">
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="font-weight-light full-name">MOViES To YOU</h1>
-            <p class="lead text-muted">#Get Peak Stuff 👌</p>
-
-            <!--Search bar-->
-            <div class="container, req">
-              <div class="row justify-content-center">
-                <div class="col-md-6">
-                  <form>
-                    <div class="input-group mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Search"
-                        aria-label="Search"
-                        aria-describedby="button-addon2"
-                      />
-                      <button
-                        class="btn btn-primary"
-                        type="submit"
-                        id="button-addon2"
-                      >
-                        Go
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-            <p>
-              <a href="review.html" class="btn btn-primary my-2"
-                >Let's Hear Your Review</a
-              >
-              <a href="request.html" class="btn btn-secondary my-2"
-                >Request a Movie</a
-              >
+<body>
+  <header class="fixed-top">
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">
+              MOViES 2 YOU is a site that collects high quality movies and tv
+              series that you can download with just ONE CLICK.<br />
+              You can give your review about the site, also request movies or
+              tv series and expect a response within 24 hours.
             </p>
           </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://x.com/_FashMayor" class="text-white" target="_blank">Follow on Twitter</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/fasugba-mayowa-737b14327?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bm2qFjjGxQeSv7aCqnmyEtQ%3D%3D"
+                  class="text-white" target="_blank">Follow on LinkedIn</a>
+              </li>
+              <li>
+                <a href="mailto:mayowasamson03@gmail.com" class="text-white" target="_blank">Email me</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <!--logo and website name-->
+          <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="20" height="20" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+            <g id="SVGRepo_iconCarrier">
+              <style type="text/css">
+                .st0 {
+                  fill: #ffffff;
+                }
+              </style>
+              <g>
+                <path class="st0"
+                  d="M343.656,451.109C410,411.438,454.422,338.906,454.422,256c0-125.484-101.719-227.219-227.203-227.219 C101.719,28.781,0,130.516,0,256s101.719,227.219,227.219,227.219H512v-32.109H343.656z M318.484,145.875 c23.547-13.594,53.641-5.531,67.234,18.016s5.531,53.656-18.016,67.25c-23.547,13.578-53.641,5.516-67.234-18.016 C286.859,189.563,294.938,159.469,318.484,145.875z M300.453,297.688c13.609-23.547,43.703-31.609,67.25-18.016 c23.547,13.609,31.609,43.703,18.016,67.25s-43.688,31.609-67.25,18.016C294.938,351.344,286.859,321.234,300.453,297.688z M227.219,72.375c27.188,0,49.219,22.031,49.219,49.219s-22.031,49.25-49.219,49.25s-49.25-22.063-49.25-49.25 S200.031,72.375,227.219,72.375z M249.938,256c0,12.563-10.172,22.719-22.719,22.719c-12.563,0-22.719-10.156-22.719-22.719 s10.156-22.719,22.719-22.719C239.766,233.281,249.938,243.438,249.938,256z M68.703,163.891 c13.594-23.547,43.703-31.609,67.25-18.016s31.609,43.688,18.016,67.25c-13.594,23.531-43.703,31.609-67.25,18.016 C63.188,217.547,55.109,187.438,68.703,163.891z M135.969,364.938c-23.563,13.594-53.656,5.531-67.266-18.016 c-13.578-23.547-5.516-53.656,18.016-67.266c23.547-13.594,53.656-5.516,67.25,18.031S159.5,351.344,135.969,364.938z M177.969,389.203c0-27.188,22.063-49.234,49.25-49.234s49.219,22.047,49.219,49.234s-22.031,49.234-49.219,49.234 S177.969,416.391,177.969,389.203z">
+                </path>
+              </g>
+            </g>
+          </svg>
+          <strong>M2Y</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-      <div class="album py-5 bg-light">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 blur">
-            <!--Damsel-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img
-                  src="img/damsel/damsel.jpg"
-                  height="225px"
-                  x="100%"
-                  y="100%"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong>Damsel</strong> (2024)<br />A dutiful damsel agrees
-                    to marry a handsome prince, only to find the royal family
-                    has recruited her as a sacrifice to repay an ancient debt.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="more.html" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Now (1.7GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted"> 1h 50m</small>
+  <main>
+    <!--main body-->
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="font-weight-light full-name">MOViES To YOU</h1>
+          <p class="lead text-muted">#Get Peak Stuff 👌</p>
+
+          <!--Search bar-->
+          <div class="container, req">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <form>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                      aria-describedby="button-addon2" />
+                    <button class="btn btn-primary" type="submit" id="button-addon2">
+                      Go
+                    </button>
                   </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            <a href="review.html" class="btn btn-primary my-2">Let's Hear Your Review</a>
+            <a href="request.html" class="btn btn-secondary my-2">Request a Movie</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 blur">
+          <!--Damsel-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/damsel/damsel.jpg" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Damsel</strong> (2024)<br />A dutiful damsel agrees
+                  to marry a handsome prince, only to find the royal family
+                  has recruited her as a sacrifice to repay an ancient debt.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="more.html" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Now (1.7GB)
+                      </button>
+                    </a>
+                  </div>
+                  <small class="text-muted"> 1h 50m</small>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--Argylle-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="img/argylle.jpg" height="225px" x="100%" y="100%" />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong>Argylle</strong> (2024)<br />When Elly Conway's
-                    novels about a secret agent start to mirror the covert
-                    actions of a real-life spy organization, the line between
-                    fiction and reality begin to blur.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Now (3.11GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted">2h 19m</small>
+          <!--Argylle-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/argylle.jpg" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Argylle</strong> (2024)<br />When Elly Conway's
+                  novels about a secret agent start to mirror the covert
+                  actions of a real-life spy organization, the line between
+                  fiction and reality begin to blur.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Now (3.11GB)
+                      </button>
+                    </a>
                   </div>
+                  <small class="text-muted">2h 19m</small>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--Madame Webb-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img
-                  src="img/madame-web.jpg"
-                  height="225px"
-                  x="100%"
-                  y="100%"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong>Madame Webb</strong> (2024)<br />Forced to challenge
-                    revelations about her past, Cassandra Webb needs to
-                    safeguard three young women from a deadly adversary who
-                    wants them destroyed.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Now (1.35GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted">1hr 56min</small>
+          <!--Madame Webb-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/madame-web.jpg" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Madame Webb</strong> (2024)<br />Forced to challenge
+                  revelations about her past, Cassandra Webb needs to
+                  safeguard three young women from a deadly adversary who
+                  wants them destroyed.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Now (1.35GB)
+                      </button>
+                    </a>
                   </div>
+                  <small class="text-muted">1hr 56min</small>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--Little Women-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img
-                  src="img/little-women.jpg"
-                  height="225px"
-                  x="100%"
-                  y="100%"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong>Little Women</strong> (2019)<br />The story follows
-                    the lives of the four March sisters and details their
-                    passage from childhood to womanhood with each determined to
-                    live life on her own terms.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Now (1.19GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted">2hr 15min</small>
+          <!--Little Women-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/little-women.jpg" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Little Women</strong> (2019)<br />The story follows
+                  the lives of the four March sisters and details their
+                  passage from childhood to womanhood with each determined to
+                  live life on her own terms.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Now (1.19GB)
+                      </button>
+                    </a>
                   </div>
+                  <small class="text-muted">2hr 15min</small>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--Kung Fu Panda 4-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img
-                  src="img/kung-fu-panda-4.jpg"
-                  height="225px"
-                  x="100%"
-                  y="100%"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong>Kung Fu Panda 4</strong> (2024)<br />After Po is
-                    tapped to become the Spiritual Leader of the Valley of
-                    Peace, he needs to find and train a new Dragon Warrior,
-                    while a wicked sorceress plans to re-summon all the master
-                    villains whom Po has vanquished to the spirit realm.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Now (2.01GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted">1hr 34min</small>
+          <!--Kung Fu Panda 4-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/kung-fu-panda-4.jpg" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Kung Fu Panda 4</strong> (2024)<br />After Po is
+                  tapped to become the Spiritual Leader of the Valley of
+                  Peace, he needs to find and train a new Dragon Warrior,
+                  while a wicked sorceress plans to re-summon all the master
+                  villains whom Po has vanquished to the spirit realm.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Now (2.01GB)
+                      </button>
+                    </a>
                   </div>
+                  <small class="text-muted">1hr 34min</small>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--Dune-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="img/dune.jpg" height="225px" x="100%" y="100%" />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong>Dune</strong> (2021)<br />A noble family becomes
-                    embroiled in a war for control over the galaxy's most
-                    valuable asset while its heir becomes troubled by visions of
-                    a dark future.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Now (2.28GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted">2hr 35min</small>
+          <!--Dune-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/dune.jpg" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Dune</strong> (2021)<br />A noble family becomes
+                  embroiled in a war for control over the galaxy's most
+                  valuable asset while its heir becomes troubled by visions of
+                  a dark future.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Now (2.28GB)
+                      </button>
+                    </a>
                   </div>
+                  <small class="text-muted">2hr 35min</small>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--Dune Part 2-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img
-                  src="img/dune-part-2.jpg"
-                  height="225px"
-                  x="100%"
-                  y="100%"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong>Dune Part 2</strong> (2024)<br />Facing a choice
-                    between the love of his life and the fate of the known
-                    universe, he endeavors to prevent a terrible future only he
-                    can foresee.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Now (2.77GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted">2hr 46min</small>
+          <!--Dune Part 2-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/dune-part-2.jpg" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Dune Part 2</strong> (2024)<br />Facing a choice
+                  between the love of his life and the fate of the known
+                  universe, he endeavors to prevent a terrible future only he
+                  can foresee.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Now (2.77GB)
+                      </button>
+                    </a>
                   </div>
+                  <small class="text-muted">2hr 46min</small>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--The Antisoicial Network Memes to Mayhem-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img
-                  src="img/The-Antisocial-Network-Memes-to-Mayhem.jpg"
-                  height="225px"
-                  x="100%"
-                  y="100%"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong>The Antisocial Network</strong> (2024)<br />"From
-                    Memes To Mayhem", a group of bored teenagers built an online
-                    community out of their shared loneliness but accidentally
-                    shattered consensus reality in the process.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Now (1.72GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted">2hr 3min</small>
+          <!--The Antisoicial Network Memes to Mayhem-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/The-Antisocial-Network-Memes-to-Mayhem.jpg" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>The Antisocial Network</strong> (2024)<br />"From
+                  Memes To Mayhem", a group of bored teenagers built an online
+                  community out of their shared loneliness but accidentally
+                  shattered consensus reality in the process.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Now (1.72GB)
+                      </button>
+                    </a>
                   </div>
+                  <small class="text-muted">2hr 3min</small>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--Shogun-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="img/shogun.avif" height="225px" x="100%" y="100%" />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong>Shogun</strong> (2024)<br />When a mysterious
-                    European ship is found marooned in a nearby fishing village,
-                    Lord Yoshii discovers secrets that could tip the scales of
-                    power and devastate his enemies.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Zip (2.85GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted">1s 10ep</small>
+          <!--Shogun-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/shogun.avif" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Shogun</strong> (2024)<br />When a mysterious
+                  European ship is found marooned in a nearby fishing village,
+                  Lord Yoshii discovers secrets that could tip the scales of
+                  power and devastate his enemies.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Zip (2.85GB)
+                      </button>
+                    </a>
                   </div>
+                  <small class="text-muted">1s 10ep</small>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--Rebel Moon-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img
-                  src="img/rebel-moon.jpg"
-                  height="225px"
-                  x="100%"
-                  y="100%"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong>Rebel Moon</strong> (2023)<br />When a peaceful
-                    settlement on the edge of a distant moon gets threatened by
-                    a tyrannical ruling force, a stranger living among its
-                    villagers becomes their best hope for survival.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Now (2.61GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted">2hr 14min</small>
+          <!--Rebel Moon-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/rebel-moon.jpg" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Rebel Moon</strong> (2023)<br />When a peaceful
+                  settlement on the edge of a distant moon gets threatened by
+                  a tyrannical ruling force, a stranger living among its
+                  villagers becomes their best hope for survival.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Now (2.61GB)
+                      </button>
+                    </a>
                   </div>
+                  <small class="text-muted">2hr 14min</small>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--Rebel Moon Part 2-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img
-                  src="img/rebel-moon-part-2.jpg"
-                  height="225px"
-                  x="100%"
-                  y="100%"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong>Rebel Moon Part 2</strong> (2024)<br />Kora and
-                    surviving warriors prepare to defend Veldt, their new home,
-                    alongside its people against the Realm. The warriors face
-                    their pasts, revealing their motivations before the Realm's
-                    forces arrive to crush the growing rebellion.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Now (2.64GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted">2hr 2min</small>
+          <!--Rebel Moon Part 2-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/rebel-moon-part-2.jpg" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Rebel Moon Part 2</strong> (2024)<br />Kora and
+                  surviving warriors prepare to defend Veldt, their new home,
+                  alongside its people against the Realm. The warriors face
+                  their pasts, revealing their motivations before the Realm's
+                  forces arrive to crush the growing rebellion.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Now (2.64GB)
+                      </button>
+                    </a>
                   </div>
+                  <small class="text-muted">2hr 2min</small>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--Kids are growing up-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img
-                  src="img/Kids-Are-Growing-Up.webp"
-                  height="225px"
-                  x="100%"
-                  y="100%"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong
-                      >Kids Are Growing Up: A story about a kid named
-                      Laroi</strong
-                    >
-                    (2024)<br />An up-close and personal behind the scenes look
-                    at the life of Australian music phenom, The Kid Laroi, and
-                    his journey to global stardom.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Now (1.25GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted">1hr 25min</small>
+          <!--Kids are growing up-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/Kids-Are-Growing-Up.webp" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Kids Are Growing Up: A story about a kid named
+                    Laroi</strong>
+                  (2024)<br />An up-close and personal behind the scenes look
+                  at the life of Australian music phenom, The Kid Laroi, and
+                  his journey to global stardom.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Now (1.25GB)
+                      </button>
+                    </a>
                   </div>
+                  <small class="text-muted">1hr 25min</small>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--Avatar-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="img/avatar.jpg" height="225px" x="100%" y="100%" />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong>Avatar</strong> (2024)<br />A young boy known as the
-                    Avatar must master the four elemental powers to save a world
-                    at war and fight a ruthless enemy bent on stopping him.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Zip (3.83GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted">1s 8ep</small>
+          <!--Avatar-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/avatar.jpg" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Avatar</strong> (2024)<br />A young boy known as the
+                  Avatar must master the four elemental powers to save a world
+                  at war and fight a ruthless enemy bent on stopping him.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Zip (3.83GB)
+                      </button>
+                    </a>
                   </div>
+                  <small class="text-muted">1s 8ep</small>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--Parasyte-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img
-                  src="img/parasyte-the-grey.avif"
-                  height="225px"
-                  x="100%"
-                  y="100%"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong>Parasyte: The Grey</strong> (2024)<br />When
-                    unidentified parasites violently take over human hosts and
-                    gain power, humanity must rise to combat the growing threat.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Zip (2.65GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted">1s 6ep</small>
+          <!--Parasyte-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/parasyte-the-grey.avif" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Parasyte: The Grey</strong> (2024)<br />When
+                  unidentified parasites violently take over human hosts and
+                  gain power, humanity must rise to combat the growing threat.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Zip (2.65GB)
+                      </button>
+                    </a>
                   </div>
+                  <small class="text-muted">1s 6ep</small>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--Echo-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="img/echo.jpg" height="225px" x="100%" y="100%" />
-                <div class="card-body">
-                  <p class="card-text">
-                    <strong>Echo</strong> (2024)<br />Maya Lopez must face her
-                    past, reconnect with her Native American roots, and embrace
-                    the meaning of family and community if she ever hopes to
-                    move forward.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="" class="mr-1">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          More
-                        </button>
-                      </a>
-                      <a href="" target="_blank">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Download Zip (2.96GB)
-                        </button>
-                      </a>
-                    </div>
-                    <small class="text-muted">1s 5ep</small>
+          <!--Echo-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="img/echo.jpg" height="225px" x="100%" y="100%" />
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Echo</strong> (2024)<br />Maya Lopez must face her
+                  past, reconnect with her Native American roots, and embrace
+                  the meaning of family and community if she ever hopes to
+                  move forward.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="mr-1">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        More
+                      </button>
+                    </a>
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        Download Zip (2.96GB)
+                      </button>
+                    </a>
                   </div>
+                  <small class="text-muted">1s 5ep</small>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer class="text-muted py-5">
-      <div class="container">
-        <p class="float-right mb-1">
-          <a href="#">Back to top</a>
-        </p>
-        <p class="mb-1">M2Y &copy; 2024. Created by Fash-Mayor</p>
-        <p class="mb-0">
-          Want to Contribute?
-          <a href="https://github.com/Fash-Mayor/MOViES2YOU" target="_blank"
-            >Visit my GitHub</a
-          >
-        </p>
-      </div>
-    </footer>
-  </body>
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-right mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1">M2Y &copy; 2024. Created by Fash-Mayor</p>
+      <p class="mb-0">
+        Want to Contribute?
+        <a href="https://github.com/Fash-Mayor/MOViES2YOU" target="_blank">Visit my GitHub</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
